@@ -1,17 +1,68 @@
+:root{
+    --back-main : radial-gradient(101.25% 101.25% at 50% 0%, #5b33c0 0%, #100B34 100%);
+    --back-secondary: radial-gradient(100% 101.25% at 50% 0%, #CDA8FF 0%, #7E49EF 100%);
+}
+@font-face {
+    font-family: op1;
+    src: url("../assets/fonts/Chakra_Petch/ChakraPetch-Bold.ttf");
+}
+@font-face {
+    font-family: op2;
+    src: url("../assets/fonts/Saira_Condensed/SairaCondensed-Regular.ttf");
+}
+@font-face {
+    font-family: op3;
+    src: url("../assets/fonts/Rajdhani/Rajdhani-Regular.ttf");
+}
+@font-face {
+    font-family: op1;
+    src: url("../assets/fonts/Chakra_Petch/ChakraPetch-Bold.ttf");
+}
+
 *{
     padding: 0px;
     margin: 0px;
 }
+h1 {
+    font-size: 50px;
+    font-family: op1;
+    color: white;
+}
+h2 {
+    font-size: 30px;
+    font-family: op2;
+    color: white;
+}
+h3 {
+    font-size: 20px;
+    font-family: op3;
+    color: white;
+}
+
+
 body {
     min-height: 100vh;
-    background: black;
+    background: var(--back-main);
 }
 header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 90px;
+    padding: 0px 50px 0px 50px;
+    box-sizing: border-box;
+}
+.header-container-logo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: aquamarine;
-    width: 100%;
+}
+.header-container-logo > img {
+    height: 90px;
+}
+.header-container-navbar {
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 ul {
     list-style: none;
@@ -21,28 +72,33 @@ ul li {
     padding: 0px 25px;
 }
 ul li > a {
-    background: antiquewhite;
-    border-radius: 20px;
+    text-decoration: none;
+    font-family: "op1";
+    font-size: 17px;
+    color: #6570b0;
+    padding: 10px 20px;
 }
-.parallax{
+
+ul li > a:hover {
+    background-color: white;
+    color: #171463FF;
+    border-radius: 50px;
+}
+/*
+.parallax {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    width: 100%;
-    padding: 100px;
+    height: 100vh;
 }
+
 
 .parallax img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    pointer-events: none;
 }
-
-#luna {
-    max-height:300px;
-    max-width: 300px;
-}
+*/
