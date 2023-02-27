@@ -1,6 +1,6 @@
 :root{
     --back-main : radial-gradient(101.25% 101.25% at 50% 0%, #5b33c0 0%, #100B34 100%);
-    --back-secondary: radial-gradient(100% 101.25% at 50% 0%, #CDA8FF 0%, #7E49EF 100%);
+    --back-secondary: radial-gradient(100% 101.25% at 50% 0%, #CDA8FF 0%, #7e49ef 100%);
 }
 @font-face {
     font-family: op1;
@@ -15,8 +15,8 @@
     src: url("../assets/fonts/Rajdhani/Rajdhani-Regular.ttf");
 }
 @font-face {
-    font-family: op1;
-    src: url("../assets/fonts/Chakra_Petch/ChakraPetch-Bold.ttf");
+    font-family: op4;
+    src: url("../assets/fonts/Genos/Genos-VariableFont_wght.ttf");
 }
 
 *{
@@ -38,7 +38,11 @@ h3 {
     font-family: op3;
     color: white;
 }
-
+p {
+    font-size: 16px;
+    color: white;
+    font-family: op3;
+}
 
 body {
     min-height: 100vh;
@@ -83,6 +87,31 @@ ul li > a:hover {
     background-color: white;
     color: #171463FF;
     border-radius: 50px;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    background: #7E49EFFF;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr;
+    column-gap: 30px;
+    position: fixed;
+
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.footer-container-display {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.logo-footer {
+    height: 60px;
 }
 /*
 .parallax {
