@@ -1,0 +1,31 @@
+body {
+    overflow-x: hidden;
+
+}
+main {
+    padding: 30px;
+    overflow-x: hidden;
+}
+h1 {
+    font-size: 200px;
+}
+h2 {
+    font-size: 250px;
+    font-family: op1;
+}
+.filtro {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+    background: radial-gradient(100% 101.25% at 50% 0%, #e600ff 0%, #122793 100%);;
+    opacity: 0.4;
+}
+.back-image {
+    justify-content: center;
+    align-items: center;
+    z-index: -1000;
+}
+.back-image img {
+    height: 700px;
+}

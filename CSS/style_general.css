@@ -92,16 +92,15 @@ ul li > a:hover {
 footer {
     height: 100px;
     width: 100%;
-    bottom: 0;
     background: #7E49EFFF;
-
+    bottom: 0;
     display: grid;
     grid-template-columns: 1fr 1fr  1fr;
     column-gap: 30px;
     position: fixed;
-
     box-sizing: border-box;
     padding: 20px;
+    z-index: 100;
 }
 
 .footer-container-display {
